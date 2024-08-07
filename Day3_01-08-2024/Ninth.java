@@ -8,6 +8,8 @@ public class Ninth {
         int n = sc.nextInt();
         int arr[] = new int[n];
 
+        System.out.println("Enter the numbers:");
+
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
