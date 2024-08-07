@@ -45,3 +45,4 @@ update test set age=20 where id=1;
 
 update test set age=17 where id=1;
 
+select * from test;
