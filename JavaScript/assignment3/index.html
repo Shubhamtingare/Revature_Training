@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="input">Add a Task</label>
+    <input type="text" id="input" />
+    <button onclick="addTask()">add</button>
+    <ul id="list">
+      <li>First task</li>
+      <li>Second task</li>
+    </ul>
+
+    <script>
+      var input = document.getElementsByTagName("input")[0];
+      var list = document.getElementById("list");
+
+      var addTask = () => {
+        let task = input.value.trim();
+
+        if (task !== "") {
+          let li = document.createElement("li");
+          li.textContent = task;
+
+          list.appendChild(li);
+          input.value = "";
+        } else {
+          alert("Please enter a task.");
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <p>Lorem, ipsum dolor.</p>
+    </div>
+    <ul>
+      <li>first</li>
+      <li class="item2">second</li>
+      <li>third</li>
+      <li>fourth</li>
+    </ul>
+    <script>
+      var content = document.querySelector("#id");
+
+      for (let i = 0; i < content.childNodes.length; i++) {
+        document.write(content[i].childNodes);
+      }
+
+      document.write(content.firstChild);
+      document.write(content.lastChild);
+
+      var item = document.querySelector(".item2");
+
+      document.write(item.previousElementSibling.textContent);
+      document.write(item.nextElementSibling.textContent);
+    </script>
+  </body>
+</html>

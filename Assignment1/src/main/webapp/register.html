@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration page</title>
+</head>
+<body>
+	<h2>Register here</h2>
+	
+	<form action="handleRegister" method="post">
+		<label>Username :</label>
+		<input type="text" name="username" placeholder="Enter your name" required>
+		<br>
+		
+		<label>Email :</label>
+		<input type="email" name="email" placeholder="Enter your email" required>
+		<br>
+		
+		<label>Gender :</label>
+		<input type="radio" name="gender" value="male">
+		<label>Male</label>
+		<input type="radio" name="gender" value="female">
+		<label>Female</label>
+		<br>
+		
+		<label>Phone :</label>
+		<input type="number" name="phone" placeholder="Enter your phone" required>
+		<br>
+		
+		<label>Password :</label>
+		<input type="password" name="password" placeholder="Enter your password" required>
+		<br>
+		
+		<button type="submit" value="submit">Register</button>
+	</form>
+</body>
+</html>

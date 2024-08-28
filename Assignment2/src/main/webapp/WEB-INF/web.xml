@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Assignment2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>firstServlet</display-name>
+    <servlet-name>firstServlet</servlet-name>
+    <servlet-class>com.shubham.servlets.firstServlet</servlet-class>
+    <init-param>
+      <param-name>message</param-name>
+      <param-value>Hello 1</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>firstServlet</servlet-name>
+    <url-pattern>/firstServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>secondservlet</display-name>
+    <servlet-name>secondservlet</servlet-name>
+    <servlet-class>com.shubham.servlets.secondservlet</servlet-class>
+    <init-param>
+      <param-name>second message</param-name>
+      <param-value>Hello 2</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>secondservlet</servlet-name>
+    <url-pattern>/secondservlet</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>first</param-name>
+    <param-value>hello all</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>secondServlet</display-name>
+    <servlet-name>secondServlet</servlet-name>
+    <servlet-class>com.shubham.servlets.secondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>secondServlet</servlet-name>
+    <url-pattern>/secondServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
